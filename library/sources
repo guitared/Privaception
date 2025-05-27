@@ -1,4 +1,4 @@
-TARGETNAME=interception
+TARGETNAME=privaception
 TARGETTYPE=DYNLINK
 DLLENTRY=_DllMainCRTStartup
 DLLDEF=
@@ -6,6 +6,6 @@ DLLDEF=
 USE_MSVCRT=1
 386_STDCALL=0
 
-C_DEFINES = $(C_DEFINES) /DINTERCEPTION_EXPORT
+C_DEFINES = $(C_DEFINES) /DPRIVACEPTION_EXPORT
 TARGETLIBS=$(SDK_LIB_PATH)\kernel32.lib $(SDK_LIB_PATH)\advapi32.lib
-SOURCES=interception.c interception.rc
+SOURCES=privaception.c privaception.rc
